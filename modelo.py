@@ -9,7 +9,7 @@ st.set_page_config(page_title = 'Calcule o Salário dos Profissionais de Dados -
 
 modelo = load_model('modelo-para-previsao-de-salario-2022')
 
-#@st.cache
+@st.cache
 def ler_dados():
 	dados = pd.read_csv('dataset-profissionais-dados-resumido.csv')
 	dados = dados.dropna()
